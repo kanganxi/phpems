@@ -1,0 +1,10 @@
+﻿DROP TABLE IF EXISTS `x2_wxlogin`;
+CREATE TABLE `x2_wxlogin` (
+  `wxsid` varchar(32) NOT NULL,
+  `wxinfo` text NOT NULL,
+  `wxtime` int(11) NOT NULL,
+  `wxtoken` varchar(32) NOT NULL,
+  PRIMARY KEY (`wxsid`),
+  KEY `wxtime` (`wxtime`),
+  KEY `wxtoken` (`wxtoken`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
